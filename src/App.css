@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+  img {
+    width: 80% !important;
+    height: 200px !important;
+  }
+
+  img:last-child {
+    width: 100% !important;
+  }
+}

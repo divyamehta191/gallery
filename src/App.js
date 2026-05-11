@@ -1,3 +1,4 @@
+import "./App.css"
 function GalleryLayout(props) {
   return (
     <div style={{backgroundColor: "pink",padding: "20px" }}>
@@ -25,11 +26,11 @@ export default function App() {
     <GalleryLayout even={
         <ImageGroup
           images={[
-            "images.png",
-              "images (1).png",
-              "images (2).png",
-          "images (3).png",
-              "images (1).png",
+           process.env.PUBLIC_URL + "/images.png",
+                  process.env.PUBLIC_URL + "/images (1).png",
+                   process.env.PUBLIC_URL +"/images (2).png",
+               process.env.PUBLIC_URL +"/images (3).png",
+                  process.env.PUBLIC_URL + "/images (1).png",
           ]}
         />
       }
@@ -38,9 +39,9 @@ export default function App() {
         <ImageGroup
           images={[
             
-            "images (5).png",
-            "download.png",
-              "download (1).png",
+                process.env.PUBLIC_URL + "/images (5).png",
+                 process.env.PUBLIC_URL +"/download.png",
+                 process.env.PUBLIC_URL +  "/download (1).png",
           ]}
         />
       }
@@ -49,10 +50,10 @@ export default function App() {
 
       <ImageGroup
         images={[
-          "download (2).png",
-          "download (3).png",
-          "download (1).png",
-          "images.png",
+               process.env.PUBLIC_URL +"/download (2).png",
+               process.env.PUBLIC_URL +"/download (3).png",
+              process.env.PUBLIC_URL + "/download (1).png",
+               process.env.PUBLIC_URL +"/images.png",
         ]}
       />
 
@@ -71,7 +72,7 @@ function ImageGroup({ images }) {
       style={{
         display: "flex",
         flexWrap: "wrap",
-        gap: "30px",
+        gap: "20px",
         justifyContent:"center"
       }}
     >
